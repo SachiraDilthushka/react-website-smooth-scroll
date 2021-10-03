@@ -2,9 +2,12 @@ import React from 'react'
 
 const HeroSection = () => {
 	return (
-		<div>
+		<HeroContainer> 
+		<HeroBg>
+			<VideoB autoplay loop muted src = {video} type ='video/mp4'/>
+		</HeroBg>
 			
-		</div>
+		</HeroContainer>
 	)
 }
 
