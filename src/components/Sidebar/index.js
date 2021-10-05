@@ -12,8 +12,14 @@ const Sidebar = ({isOpen, toggle}) => {
 					<SidebarLink to="about" onClick = {toggle}>
 						About
 					</SidebarLink>
-					<SidebarLink to="discover" onClick = {toggle}>
-						Discover
+					<SidebarLink to="website" onClick = {toggle}>
+					    Web Design
+					</SidebarLink>
+					<SidebarLink to="mobile" onClick = {toggle}>
+					    Mobile Apps
+					</SidebarLink>
+					<SidebarLink to="software" onClick = {toggle}>
+					    Bespoke Software
 					</SidebarLink>
 					<SidebarLink to="services" onClick = {toggle}>
 						Services
