@@ -8,7 +8,7 @@ const onHover = ()=>{
 	setHover(!hover);
 }
 	return (
-		<HeroContainer>
+		<HeroContainer id ='home'>
 			<HeroBg>
 				<VideoBg autoPlay loop muted src={Video} type='video/mp4' />
 			</HeroBg>
@@ -18,8 +18,10 @@ const onHover = ()=>{
 			Software systematize your business
 			</HeroP>
 			<HeroBtnWrapper>
-				<Button to = 'contactus' onMouseEnter = {onHover} onMouseLeave = {onHover} primary = 'true' dark='true'>
-					Hire Us {hover ? <ArrowForward/>: <ArrowRight/>}
+				<Button to = 'services' onMouseEnter = {onHover} onMouseLeave = {onHover} primary = 'true' dark='true'
+				smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+				>
+					Get started {hover ? <ArrowForward/>: <ArrowRight/>}
 				</Button>
 			</HeroBtnWrapper>
 

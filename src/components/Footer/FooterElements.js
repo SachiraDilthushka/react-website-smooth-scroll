@@ -108,3 +108,17 @@ export const SocialIconLink = styled.a`
 color: #fff;
 font-size: 24px;
 `
+export const DeveloperAvatar = styled.div`
+ vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+`;
+
+export const Img =styled.img`
+
+vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+`;

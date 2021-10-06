@@ -9,22 +9,36 @@ const Sidebar = ({isOpen, toggle}) => {
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>
-					<SidebarLink to="about" onClick = {toggle}>
+					<SidebarLink to="about" onClick = {toggle} 
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
 						About
 					</SidebarLink>
-					<SidebarLink to="website" onClick = {toggle}>
+					<SidebarLink to="website" onClick = {toggle}
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
 					    Web Design
 					</SidebarLink>
-					<SidebarLink to="mobile" onClick = {toggle}>
-					    Mobile Apps
-					</SidebarLink>
-					<SidebarLink to="software" onClick = {toggle}>
+					<SidebarLink to="software" onClick = {toggle}
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
 					    Bespoke Software
 					</SidebarLink>
-					<SidebarLink to="services" onClick = {toggle}>
+
+					<SidebarLink to="mobile" onClick = {toggle}
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
+					    Mobile Apps
+					</SidebarLink>
+					
+					<SidebarLink to="services" onClick = {toggle}
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
 						Services
 					</SidebarLink>
-					<SidebarLink to="ContactUs" onClick = {toggle}>
+					<SidebarLink to="ContactUs" onClick = {toggle}
+					smooth ={true} duration ={500} spy ={true} exact ='true' offset = {-80} 
+					>
 					Contact Us
 					</SidebarLink>
 

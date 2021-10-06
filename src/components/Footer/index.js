@@ -1,7 +1,13 @@
 import React from 'react';
+import img from '../../images/avatar.jpeg'
+import {animateScroll as scroll} from 'react-scroll';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { FooterContainer, FooterWrapper, FooterLinkContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialMediaLogo, WebsiteRights, SocialIcons, SocialIconLink, } from './FooterElements'
+import { FooterContainer, FooterWrapper, FooterLinkContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialMediaLogo, WebsiteRights, SocialIcons, SocialIconLink,Img, DeveloperAvatar } from './FooterElements'
 const Footer = () => {
+
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	}
 	return (
 		<FooterContainer>
 			<FooterWrapper>
@@ -53,9 +59,12 @@ const Footer = () => {
 				</FooterLinkContainer>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialMediaLogo to='/'>
+						<SocialMediaLogo to='/' onClick ={toggleHome}>
 							Azyntra
 						</SocialMediaLogo>
+						<DeveloperAvatar>
+						<Img src={img} alt = 'avatar'/>
+						</DeveloperAvatar>
 						<WebsiteRights>Azyntra © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
 
 						<SocialIcons>
